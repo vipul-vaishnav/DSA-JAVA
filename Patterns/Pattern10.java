@@ -1,22 +1,22 @@
-public class Pattern9 {
+public class Pattern10 {
     public static void main(String[] args) {
         int n = 5;
         print(n);
     }
 
     public static void print(int n) {
-        char ch = '*';
+        char c = '*';
         char space = ' ';
-
+        // Outer loop runs 5 times
         for (int i = 0; i < n; i++) {
             // space
-            for (int j = 0; j < i; j++) {
+            for (int j = 0; j < n - (i + 1); j++) {
                 System.out.print(space);
             }
-
             // star
-            for (int j = 0; j < 2 * (n - i) - 1; j++) {
-                System.out.print(ch);
+            for (int j = 0; j <= i; j++) {
+                System.out.print(c);
+                System.out.print(space);
             }
             System.out.println();
         }
