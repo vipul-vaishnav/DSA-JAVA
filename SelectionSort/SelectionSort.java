@@ -8,7 +8,7 @@ public class SelectionSort {
         System.out.println(Arrays.toString(arr));
     }
 
-    private static void selectionSort(int[] arr) {
+    public static void selectionSort(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             int last = arr.length - i - 1;
             int maxIndex = getMaxIndex(arr, 0, last);
@@ -16,7 +16,7 @@ public class SelectionSort {
         }
     }
 
-    private static int getMaxIndex(int[] arr, int start, int end) {
+    public static int getMaxIndex(int[] arr, int start, int end) {
         int max = start;
 
         for (int index = start; index <= end; index++) {
